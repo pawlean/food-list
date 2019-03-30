@@ -2,16 +2,17 @@ import React from 'react';
 import './App.css';
 import './custom.css';
 
-function Table({ foods }) {
+function Table(props) {
   return (
     <table>
+    <tbody>
     <tr>
-    <th class="food-title">Food</th>
-    <th class="carbs">Carbs</th>
-    <th class="fat">Fat</th>
-    <th class="protein">Protein</th>
+    <th className="food-title">Food</th>
+    <th className="carbs">Carbs</th>
+    <th className="fat">Fat</th>
+    <th className="protein">Protein</th>
     </tr>
-    { foods.map(food => (
+    {props.foods.map(food => (
       <tr>
       <td>{food.name}</td>
       <td>{food.fat}</td>
@@ -19,6 +20,7 @@ function Table({ foods }) {
       <td>{food.carbs}</td>
       </tr>))
     }
+    </tbody>
     </table>
   )
 

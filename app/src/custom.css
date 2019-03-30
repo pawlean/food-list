@@ -1,15 +1,20 @@
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 5px;
+}
 /* Table styling */
 table {
   padding: 10px;
 }
+th {
+  color: white;
+  padding: 20px;
+}
 td {
   padding: 10px;
+  background-color: #fafafa;
 }
-th {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-}
+
 th.food-title {
   background-color: #000000;
 }
@@ -25,17 +30,82 @@ th.protein {
 /* Footer styling */
 
 footer {
-  background-color: white;
+  background-color: #e9e9e9;
   color: #054158;
+  height: auto;
+  padding: 10px;
+  margin-top: 50px;
 }
 
 /* General styling */
-a {
+a.footer {
   color: #054158;
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
+a.footer:hover {
   color: #054f7c;
   border-bottom: 1px dotted #054f7c;
+}
+a {
+  text-decoration: none;
+}
+.HomeNav {
+  color: #054f7c;
+  display: inline;
+  list-style-type: none;
+  margin: 50px;
+  background-color: #f6f6f6;
+  border-radius: 5%;
+  padding: 20px;
+}
+.HomeNav:hover {
+  background-color: #6494b1;
+  color: white;
+}
+ul {
+    margin-bottom:50px;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+}
+
+.FoodForm {
+  padding: 20px;
+  width: 50%;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
+input[type=submit] {
+  background-color: #f6f6f6;
+  color: #054f7c;
+  padding: 15px;
+  border-radius: 5%;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 0px;
+}
+input[type=submit]:hover {
+  background-color: #6494b1;
+  color: #ffffff;
+}
+
+label {
+  padding: 12px 12px 12px;
+  display: inline;
+}
+
+#text1 {
+  width:10%;
 }

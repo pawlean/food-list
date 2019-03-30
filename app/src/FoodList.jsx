@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 
 import Table from './Table';
@@ -9,7 +9,7 @@ export default class FoodList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("http://localhost:4000/")
+    axios.get("/api")
     .then(res => {
       const foods = res.data;
       this.setState({ foods });
