@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
-import './custom.css';
+import axios from 'axios';
+
 import Table from './Table';
 import Footer from './Footer';
+
+import './App.css';
+import './custom.css';
 
 
 class App extends Component {
