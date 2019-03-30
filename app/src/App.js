@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './custom.css';
 import Table from './Table';
@@ -11,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-        <h1>Food List 😋 </h1>
+        <h1>Food List <span role="img" aria-label="yummy-face">😋</span></h1>
 
         <Table/>
 
