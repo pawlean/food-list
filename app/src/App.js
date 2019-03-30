@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Table from './Table';
+import FoodList from './FoodList';
 import Footer from './Footer';
 
 import './App.css';
@@ -15,7 +15,7 @@ class App extends Component {
         <header className="App-header">
         <h1>Food List <span role="img" aria-label="yummy-face">😋</span></h1>
 
-        <Table/>
+        <FoodList/>
 
         </header>
         <Footer/>
