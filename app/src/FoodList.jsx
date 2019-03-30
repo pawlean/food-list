@@ -17,7 +17,6 @@ export default class FoodList extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return(
       <Table foods={this.state.foods} />
     )
