@@ -9,7 +9,7 @@ export default class FoodList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("/api")
+    axios.get("/api/list")
     .then(res => {
       const foods = res.data;
       this.setState({ foods });
