@@ -17,7 +17,9 @@ class App extends Component {
         <FoodList/>
 
         </header>
+        <footer>
         <Footer/>
+        </footer>
       </div>
     );
   }

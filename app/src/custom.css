@@ -2,12 +2,13 @@
 table {
   padding: 10px;
 }
-td {
-  padding: 10px;
-}
+
 th {
   background-color: #4CAF50;
   color: white;
+  padding: 10px;
+}
+td {
   padding: 10px;
 }
 th.food-title {
@@ -25,8 +26,11 @@ th.protein {
 /* Footer styling */
 
 footer {
-  background-color: white;
+  background-color: #dddddd;
   color: #054158;
+  height: auto;
+  padding: 10px;
+  margin-top: 50px;
 }
 
 /* General styling */
