@@ -1,0 +1,35 @@
+table {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+th.food-title {
+  background-color: black;
+}
+th.carbs {
+  background-color: #1f6aa3;
+}
+th.fat {
+  background-color: #6494b1;
+}
+th.protein {
+  background-color: #054f7c;
+}
+footer {
+  background-color: white;
+  color: #054158;
+}
+a {
+  color: #054158;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #054f7c;
+}
