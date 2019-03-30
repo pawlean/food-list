@@ -1,3 +1,4 @@
+/* Table styling */
 table {
   padding: 10px;
 }
@@ -10,7 +11,7 @@ th {
   padding: 10px;
 }
 th.food-title {
-  background-color: black;
+  background-color: #000000;
 }
 th.carbs {
   background-color: #1f6aa3;
@@ -21,10 +22,14 @@ th.fat {
 th.protein {
   background-color: #054f7c;
 }
+/* Footer styling */
+
 footer {
   background-color: white;
   color: #054158;
 }
+
+/* General styling */
 a {
   color: #054158;
   text-decoration: none;
@@ -32,4 +37,5 @@ a {
 }
 a:hover {
   color: #054f7c;
+  border-bottom: 1px dotted #054f7c;
 }
