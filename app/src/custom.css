@@ -69,3 +69,43 @@ ul {
     list-style-type:none;
     text-align:center;
 }
+
+.FoodForm {
+  padding: 20px;
+  width: 50%;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
+input[type=submit] {
+  background-color: #f6f6f6;
+  color: #054f7c;
+  padding: 15px;
+  border-radius: 5%;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 0px;
+}
+input[type=submit]:hover {
+  background-color: #6494b1;
+  color: #ffffff;
+}
+
+label {
+  padding: 12px 12px 12px;
+  display: inline;
+}
+
+#text1 {
+  width:10%;
+}

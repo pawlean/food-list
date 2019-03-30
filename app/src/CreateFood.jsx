@@ -3,8 +3,29 @@ import React from 'react';
 
 function CreateFood() {
   return(
-    <h1>Yay, it works!</h1>
+    <div class="FoodForm">
 
+    <form>
+
+      <label>URL of product
+        <input type="text" name="name" />
+      </label>
+
+      <label>% fat</label>
+        <input type="text" name="name" id="text1" />
+
+      <label>% protein</label>
+        <input type="text" name="name" id="text1"  />
+
+
+      <label>% carbs</label>
+        <input type="text" name="name" id="text1" />
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+    </div>
   )
 }
 
