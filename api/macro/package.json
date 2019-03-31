@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "micro",
+    "start": "micro --port 4001",
     "dev": "micro-dev --port 4001"
   },
   "author": "",

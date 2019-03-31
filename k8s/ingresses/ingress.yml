@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: foodlist-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.frontend.passHostHeader: "false"
+    traefik.frontend.priority: "1"
+    ingress.kubernetes.io/protocol: http
+spec:
+  rules:
+  - host: foodlist.com
+    http:
+      paths:
+      # - path: /add
+      #   backend:
+      #     serviceName: foodlist-add
+      #     servicePort: 80
+      # - path: /list
+      #   backend:
+      #     serviceName: foodlist-list
+      #     servicePort: 80
+      # - path: /macro
+      #   backend:
+      #     serviceName: foodlist-macro
+      #     servicePort: 80
+      - path: /
+        backend:
+          serviceName: nginx
+          servicePort: 80

@@ -1,0 +1,38 @@
+# declare Traefik deployment
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: foodlist-app
+  labels:
+    app: foodlist-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: foodlist-app
+  template:
+    metadata:
+      labels:
+        app: foodlist-app
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                - key: cloud.google.com/gke-nodepool
+                  operator: In
+                  values:
+                    - preemptible-workers
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - foodlist-app
+            topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: foodlist-app
+        image: "gcr.io/mattburman/mattburman.com@sha256:2228cb1cc98766363dbacaeb8c4af336f87b2a7232e53301df0480e1ecbac5de"

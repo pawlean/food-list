@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: foodlist-macro
+spec:
+  selector:
+    app: foodlist-macro
+  ports:
+  - name: http
+    targetPort: 4001
+    port: 80
+  - name: https
+    targetPort: 4001
+    port: 443

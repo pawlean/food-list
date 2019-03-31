@@ -1,0 +1,49 @@
+# declare Traefik deployment
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: foodlist-add
+  labels:
+    app: foodlist-add
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: foodlist-add
+  template:
+    metadata:
+      labels:
+        app: foodlist-add
+    spec:
+      volumes:
+      - name: nfs-server
+        nfs:
+          server: nfs-server.default.svc.cluster.local
+          path: /foodlist
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                - key: cloud.google.com/gke-nodepool
+                  operator: In
+                  values:
+                    - preemptible-workers
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - foodlist-add
+            topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: foodlist-add
+        image: "gcr.io/mattburman/mattburman.com@sha256:2228cb1cc98766363dbacaeb8c4af336f87b2a7232e53301df0480e1ecbac5de"
+        volumeMounts:
+          - name: nfs-server
+            mountPath: /db
+        env:
+        - name: SQLITE_PATH
+          value: /db/data.db
