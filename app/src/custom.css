@@ -3,6 +3,7 @@ h1 {
   letter-spacing: 5px;
   margin-bottom: 0px;
   font-size: 40pt;
+  color: #00a6cb;
 }
 p.subtitle {
   margin-bottom: 50px;
@@ -23,7 +24,7 @@ td {
 }
 
 th.food-title {
-  background-color: #282828;
+  background-color: #131112;
 }
 th.carbs {
   background-color: #1f6aa3;
@@ -46,13 +47,13 @@ footer {
 
 /* General styling */
 a.footer {
-  color: #054158;
+  color: #00a6cb;
   text-decoration: none;
   font-weight: bold;
 }
 a.footer:hover {
-  color: #054f7c;
-  border-bottom: 1px dotted #054f7c;
+  color: #00a6cb;
+  border-bottom: 1px dotted #00a6cb;
 }
 a {
   text-decoration: none;
@@ -67,7 +68,7 @@ a {
   padding: 20px;
 }
 .HomeNav:hover {
-  background-color: #6494b1;
+  background-color: #00a6cb;
   color: white;
 }
 ul {
@@ -104,7 +105,7 @@ input[type=submit] {
   border: 0px;
 }
 input[type=submit]:hover {
-  background-color: #6494b1;
+  background-color: #00a6cb;
   color: #ffffff;
 }
 
