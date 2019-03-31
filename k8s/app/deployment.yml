@@ -35,4 +35,4 @@ spec:
             topologyKey: "kubernetes.io/hostname"
       containers:
       - name: foodlist-app
-        image: "gcr.io/mattburman/mattburman.com@sha256:2228cb1cc98766363dbacaeb8c4af336f87b2a7232e53301df0480e1ecbac5de"
+        image: "gcr.io/mattburman/0b5e97cdaf6f@sha256:97af9734d6df7fdc77b95006f39de5b3759acc2b6cf0650c806d4b5e0b77d401"

@@ -9,7 +9,7 @@ metadata:
     ingress.kubernetes.io/protocol: http
 spec:
   rules:
-  - host: foodlist.com
+  - host: whatsmyfood.com
     http:
       paths:
       # - path: /add
@@ -26,5 +26,5 @@ spec:
       #     servicePort: 80
       - path: /
         backend:
-          serviceName: nginx
+          serviceName: foodlist-app
           servicePort: 80
