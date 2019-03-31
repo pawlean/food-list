@@ -1,7 +1,14 @@
 h1 {
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 5px;
+  margin-bottom: 0px;
+  font-size: 40pt;
 }
+p.subtitle {
+  margin-bottom: 50px;
+  font-size: 14pt;
+}
+
 /* Table styling */
 table {
   padding: 10px;

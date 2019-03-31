@@ -28,6 +28,17 @@ handleURLChange(event) {
     })
 }
 
+handleOnClick() {
+  axios.post(`/api/add`, this.state)
+    .then(res => {
+      window.location = "/";
+  })
+  .catch(error => {
+    alert(error.data);
+  })
+}
+
+
 render() {
   return(
     <div class="FoodForm">
@@ -52,7 +63,7 @@ render() {
       <label>% carbs</label>
         <input type="text" name="name" id="text1" value={this.state.carbs} />
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" onClick={this.handleOnClick.bind(this)} />
 
     </form>
 

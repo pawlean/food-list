@@ -16,6 +16,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         <h1>Food List</h1>
+        <p className="subtitle">Nutrition is an essential part of health!
+        <br /> Use the tool to learn about the macros of your favourite food.</p>
           <Router>
               <ul>
               <Link to="/" ><li className="HomeNav"><span role="img" aria-label="home">🏠</span> Home</li></Link>
