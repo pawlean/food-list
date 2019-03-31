@@ -2,6 +2,7 @@
   "rules": [
     {"pathname": "/api/list", "method":["GET"], "dest": "http://localhost:4000"},
     {"pathname": "/api/macro", "method":["GET"], "dest": "http://localhost:4001"},
+    {"pathname": "/api/add", "method":["POST"], "dest": "http://localhost:4002"},
     {"pathname": "/**", "dest": "http://localhost:3000"}
   ]
 }
