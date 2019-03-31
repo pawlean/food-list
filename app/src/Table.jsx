@@ -12,7 +12,7 @@ function Table(props) {
     <th className="fat">Fat</th>
     <th className="protein">Protein</th>
     </tr>
-    {props.foods.map(food => (
+    {(props.foods || []).map(food => (
       <tr>
       <td>{food.name}</td>
       <td>{food.fat}</td>
