@@ -23,7 +23,9 @@ module.exports = async (req, res) => {
 
   if (!url || !name || !isNumber(fat) || !isNumber(protein) || !isNumber(carbs)) {
     res.statusCode = 400;
-    return 'Invalid param: Either url, name, fat, protein, carbs';
+    const msg = 'Invalid param: Either url, name, fat, protein, carbs';
+    console.log({ msg });
+    return msg;
   }
 
   const data = {
